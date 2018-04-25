@@ -1,0 +1,16 @@
+
+{
+  "name": "pilarfc-crowdbotics-121",
+  "description": "This is repository for web app developed with django  and with features twentythree",
+  "repository": "https://github.com/crowdbotics-users/pilarfc-crowdbotics-121",
+  "keywords": ['web', 'twentythree'],
+  "env": {
+    "DEBUG_COLLECTSTATIC": "1" 
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "scripts": {
+    "postdeploy": "python manage.py migrate --noinput"
+  }
+}
